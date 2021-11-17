@@ -12,6 +12,7 @@ import switchSustainable from '../../images/eng/switch-sustainable.jpeg';
 import fb from '../../images/ico/fb.png';
 import inst from '../../images/ico/inst.png';
 import linked from '../../images/ico/linked.png';
+import map from '../../images/map_en.png';
 
 
 const neededVar = {
@@ -25,6 +26,7 @@ const neededVar = {
     fb,
     inst,
     linked,
+    map,
 };
 
 const data = {
@@ -41,6 +43,8 @@ const data = {
         fb: `https://timur00kh.github.io/danaflex-mail-2/images/ico/fb.png`,
         inst: `https://timur00kh.github.io/danaflex-mail-2/images/ico/inst.png`,
         linked: `https://timur00kh.github.io/danaflex-mail-2/images/ico/linked.png`,
+
+        map: `https://timur00kh.github.io/danaflex-mail-2/images/map_ru.png`,
     },
     links: {
         signup: 'https://event-danaflex.com/'
