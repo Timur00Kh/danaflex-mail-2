@@ -30,7 +30,17 @@
     font-size: 20px;
     line-height: 1.55;
     margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+}
+
+.link {
+  font-size: 20px;
+  line-height: 1.55;
+  margin-top: 0;
 }
 
 .block-img {
