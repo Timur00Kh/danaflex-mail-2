@@ -45,7 +45,7 @@ const data = {
         inst: `https://timur00kh.github.io/danaflex-mail-2/images/ico/inst.png`,
         linked: `https://timur00kh.github.io/danaflex-mail-2/images/ico/linked.png`,
 
-        map: `https://timur00kh.github.io/danaflex-mail-2/images/map_ru.png`,
+        map: `https://timur00kh.github.io/danaflex-mail-2/images/map_en.png`,
     },
     links: {
         signup: 'https://event-danaflex.com/'
