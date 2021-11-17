@@ -1,0 +1,22 @@
+{{#> layout }}
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="600" align="center"><tr><td style="padding-top:0; padding-bottom:0;
+    padding-right:0; padding-left:0; margin:0px;">
+    <![endif]-->
+    <table align="center" class="container" cellspacing="0" cellpadding="0" border="0"
+           style="width:100%; max-width:600px; border:0;background-image: url('{{images.bg}}');">
+        <!--[if (gte mso 9)|(IE)]>
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:3000px;">
+        <v:fill type="tile" src="{{images.bg}}" color="#7bceeb" />
+        <v:textbox inset="0,0,0,0">
+        <![endif]-->
+        {{> @partial-block }}
+        <!--[if (gte mso 9)|(IE)]>
+        </v:textbox>
+        </v:rect>
+        <![endif]-->
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+    </td></tr></table>
+    <![endif]-->
+{{/layout}}

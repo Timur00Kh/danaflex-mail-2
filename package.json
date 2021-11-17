@@ -1,0 +1,40 @@
+{
+  "name": "danaflex-mail-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve --mode=development",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timur00Kh/danaflex-mail-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timur00Kh/danaflex-mail-1/issues"
+  },
+  "homepage": "https://github.com/Timur00Kh/danaflex-mail-1#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "css-loader": "^6.2.0",
+    "handlebars": "^4.7.7",
+    "juice": "^8.0.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "handlebars-loader": "^1.7.1",
+    "handlebars-webpack-plugin": "^2.2.1",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
