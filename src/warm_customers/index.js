@@ -1,5 +1,5 @@
 import template from './index.hbs'
-import scss from './index.scss'
+import scss from '../index.scss'
 import juice from 'juice'
 
 import keepInTouch from '../../images/eng/keep-in-touch.jpeg';
