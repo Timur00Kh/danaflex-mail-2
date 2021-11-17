@@ -9,6 +9,10 @@ import seeYou from '../../images/eng/see-you.jpeg';
 import seeYouSoon from '../../images/eng/see-you-soon.jpeg';
 import switchSustainable from '../../images/eng/switch-sustainable.jpeg';
 
+import fb from '../../images/ico/fb.png';
+import inst from '../../images/ico/inst.png';
+import linked from '../../images/ico/linked.png';
+
 
 const neededVar = {
     keepInTouch,
@@ -17,6 +21,10 @@ const neededVar = {
     seeYou,
     seeYouSoon,
     switchSustainable,
+
+    fb,
+    inst,
+    linked,
 };
 
 const data = {
@@ -29,6 +37,10 @@ const data = {
         seeYou: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you.jpeg`,
         seeYouSoon: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you-soon.jpeg`,
         switchSustainable: `https://timur00kh.github.io/danaflex-mail-2/images/eng/switch-sustainable.jpeg`,
+
+        fb: `https://timur00kh.github.io/danaflex-mail-2/images/ico/fb.png`,
+        inst: `https://timur00kh.github.io/danaflex-mail-2/images/ico/inst.png`,
+        linked: `https://timur00kh.github.io/danaflex-mail-2/images/ico/linked.png`,
     },
     links: {
         signup: 'https://event-danaflex.com/'
