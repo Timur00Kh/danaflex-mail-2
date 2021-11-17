@@ -13,6 +13,7 @@ import fb from '../../images/ico/fb.png';
 import inst from '../../images/ico/inst.png';
 import linked from '../../images/ico/linked.png';
 import map from '../../images/map_en.png'
+import logo from '../../images/logo.png'
 
 
 const neededVar = {
@@ -27,6 +28,7 @@ const neededVar = {
     inst,
     linked,
     map,
+    logo,
 };
 
 const data = {
@@ -46,6 +48,7 @@ const data = {
         linked: `https://timur00kh.github.io/danaflex-mail-2/images/ico/linked.png`,
 
         map: `https://timur00kh.github.io/danaflex-mail-2/images/map_en.png`,
+        logo: `https://timur00kh.github.io/danaflex-mail-2/images/logo.png`,
     },
     links: {
         signup: 'https://event-danaflex.com/'
