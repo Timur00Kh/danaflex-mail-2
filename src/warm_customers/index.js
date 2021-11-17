@@ -29,7 +29,8 @@ const neededVar = {
 
 const data = {
     styleString: scss.toString(),
-    name: 'World',
+    name: document.getElementById("name").value,
+    patronymic: document.getElementById("patronymic").value,
     images: {
         keepInTouch: `https://timur00kh.github.io/danaflex-mail-2/images/eng/keep-in-touch.jpeg`,
         fewWordsAboutMe: `https://timur00kh.github.io/danaflex-mail-2/images/eng/few-words-about-me.jpeg`,
