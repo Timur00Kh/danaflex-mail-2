@@ -33,7 +33,7 @@ const neededVar = {
 
 const data = {
     styleString: scss.toString(),
-    name: 'World',
+    unsubscribe: document.getElementById("unsubscribe").value,
     images: {
         keepInTouch: `https://timur00kh.github.io/danaflex-mail-2/images/eng/keep-in-touch.jpeg`,
         fewWordsAboutMe: `https://timur00kh.github.io/danaflex-mail-2/images/eng/few-words-about-me.jpeg`,
@@ -60,7 +60,6 @@ function getText () {
         ...data,
         links: {
             ...data.links,
-            unsubscribe: document.getElementById("unsubscribe").value
         }
     });
     return juice(hbsResult);
