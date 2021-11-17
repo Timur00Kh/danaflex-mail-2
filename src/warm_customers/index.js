@@ -2,22 +2,45 @@ import template from './index.hbs'
 import scss from './index.scss'
 import juice from 'juice'
 
+import keepInTouch from '../../images/eng/keep-in-touch.jpeg';
+import fewWordsAboutMe from '../../images/eng/few-words-about-me.jpeg';
+import revealMysteries from '../../images/eng/reveal-mysteries.jpeg';
+import seeYou from '../../images/eng/see-you.jpeg';
+import seeYouSoon from '../../images/eng/see-you-soon.jpeg';
+import switchSustainable from '../../images/eng/switch-sustainable.jpeg';
 
-const neededVar = {bgImg, danaflexLogo, li1, li2, li3, li4, li5};
+import fb from '../../images/ico/fb.png';
+import inst from '../../images/ico/inst.png';
+import linked from '../../images/ico/linked.png';
+
+
+const neededVar = {
+    keepInTouch,
+    fewWordsAboutMe,
+    revealMysteries,
+    seeYou,
+    seeYouSoon,
+    switchSustainable,
+
+    fb,
+    inst,
+    linked,
+};
 
 const data = {
     styleString: scss.toString(),
     name: 'World',
     images: {
-        danaflexLogo: `https://timur00kh.github.io/danaflex-mail-1/images/danaflex.png`,
-        bg: `https://timur00kh.github.io/danaflex-mail-1/images/bg.png`,
-        li: {
-            li1: `https://timur00kh.github.io/danaflex-mail-1/images/li/1.png`,
-            li2: `https://timur00kh.github.io/danaflex-mail-1/images/li/2.png`,
-            li3: `https://timur00kh.github.io/danaflex-mail-1/images/li/3.png`,
-            li4: `https://timur00kh.github.io/danaflex-mail-1/images/li/4.png`,
-            li5: `https://timur00kh.github.io/danaflex-mail-1/images/li/5.png`
-        }
+        keepInTouch: `https://timur00kh.github.io/danaflex-mail-2/images/eng/keep-in-touch.jpeg`,
+        fewWordsAboutMe: `https://timur00kh.github.io/danaflex-mail-2/images/eng/few-words-about-me.jpeg`,
+        revealMysteries: `https://timur00kh.github.io/danaflex-mail-2/images/eng/reveal-mysteries.jpeg`,
+        seeYou: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you.jpeg`,
+        seeYouSoon: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you-soon.jpeg`,
+        switchSustainable: `https://timur00kh.github.io/danaflex-mail-2/images/eng/switch-sustainable.jpeg`,
+
+        fb: `https://timur00kh.github.io/danaflex-mail-2/images/ico/fb.png`,
+        inst: `https://timur00kh.github.io/danaflex-mail-2/images/ico/inst.png`,
+        linked: `https://timur00kh.github.io/danaflex-mail-2/images/ico/linked.png`,
     },
     links: {
         signup: 'https://event-danaflex.com/'
@@ -30,7 +53,7 @@ function getText () {
         ...data,
         links: {
             ...data.links,
-            signup: document.getElementById("signup").value
+            unsubscribe: document.getElementById("unsubscribe").value
         }
     });
     return juice(hbsResult);
