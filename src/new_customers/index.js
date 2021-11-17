@@ -23,12 +23,12 @@ const data = {
     styleString: scss.toString(),
     name: 'World',
     images: {
-        keepInTouch: `https://timur00kh.github.io/danaflex-mail-2/images/danaflex.png`,
-        fewWordsAboutMe: `https://timur00kh.github.io/danaflex-mail-2/images/danaflex.png`,
-        revealMysteries: `https://timur00kh.github.io/danaflex-mail-2/images/danaflex.png`,
-        seeYou: `https://timur00kh.github.io/danaflex-mail-2/images/danaflex.png`,
-        seeYouSoon: `https://timur00kh.github.io/danaflex-mail-2/images/danaflex.png`,
-        switchSustainable: `https://timur00kh.github.io/danaflex-mail-2/images/danaflex.png`,
+        keepInTouch: `https://timur00kh.github.io/danaflex-mail-2/images/eng/keep-in-touch.jpeg`,
+        fewWordsAboutMe: `https://timur00kh.github.io/danaflex-mail-2/images/eng/few-words-about-me.jpeg`,
+        revealMysteries: `https://timur00kh.github.io/danaflex-mail-2/images/eng/reveal-mysteries.jpeg`,
+        seeYou: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you.jpeg`,
+        seeYouSoon: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you-soon.jpeg`,
+        switchSustainable: `https://timur00kh.github.io/danaflex-mail-2/images/eng/switch-sustainable.jpeg`,
     },
     links: {
         signup: 'https://event-danaflex.com/'
