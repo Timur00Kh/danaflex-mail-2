@@ -7,7 +7,7 @@ module.exports = {
     warm_customers: './src/warm_customers/index.js',
   },
   output: {
-    filename: 'bundle.js',
+    filename: "[name].bundle.js"
   },
   module: {
     rules: [
@@ -39,11 +39,13 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/new_customers/main.hbs',
-      chunks: ["new_customers"]
+      filename: "new_customers.html",
+      chunks: ["new_customers"],
     }),
     new HtmlWebpackPlugin({
       template: 'src/warm_customers/main.hbs',
-      chunks: ["warm_customers"]
+      filename: "warm_customers.html",
+      chunks: ["warm_customers"],
     })],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
