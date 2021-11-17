@@ -132,11 +132,22 @@
 
                 {{#> center}}
                     <div>
-                        <img src="{{images.fb}}" alt="fb">
-                        <img src="{{images.inst}}" alt="fb">
-                        <img src="{{images.linked}}" alt="fb">
+                        <a class="social" href="https://www.facebook.com/danaflexgroup">
+                            <img src="{{images.fb}}" alt="fb">
+                        </a>
+                        <a class="social" href="https://www.facebook.com/danaflexgroup">
+                            <img src="{{images.inst}}" alt="inst">
+                        </a>
+                        <a class="social" href="https://www.linkedin.com/company/18079282/">
+                            <img src="{{images.linked}}" alt="linked">
+                        </a>
                     </div>
                 {{/center}}
+                <div class="unsubscribe" style="margin-top: 12px">
+                    {{#> center}}
+                        <a href="{{links.unsubscribe}}">unsubscribe</a>
+                    {{/center}}
+                </div>
             </div>
         </td>
     </tr>

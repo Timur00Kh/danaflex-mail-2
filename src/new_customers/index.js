@@ -53,7 +53,7 @@ function getText () {
         ...data,
         links: {
             ...data.links,
-            signup: document.getElementById("signup").value
+            unsubscribe: document.getElementById("unsubscribe").value
         }
     });
     return juice(hbsResult);
