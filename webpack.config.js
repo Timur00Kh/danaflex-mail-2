@@ -5,9 +5,10 @@ module.exports = {
   entry: {
     new_customers: './src/new_customers/index.js',
     warm_customers: './src/warm_customers/index.js',
+    speaking_package: './src/speaking_package/index.js',
   },
   output: {
-    filename: "[name].bundle.js"
+    filename: '[name].bundle.js',
   },
   module: {
     rules: [
@@ -39,13 +40,18 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/new_customers/main.hbs',
-      filename: "new_customers.html",
-      chunks: ["new_customers"],
+      filename: 'new_customers.html',
+      chunks: ['new_customers'],
     }),
     new HtmlWebpackPlugin({
       template: 'src/warm_customers/main.hbs',
-      filename: "warm_customers.html",
-      chunks: ["warm_customers"],
+      filename: 'warm_customers.html',
+      chunks: ['warm_customers'],
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/speaking_package/main.hbs',
+      filename: 'speaking_package.html',
+      chunks: ['speaking_package'],
     })],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

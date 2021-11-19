@@ -1,20 +1,18 @@
 import template from './index.hbs'
-import scss from '../index.scss'
+import scss from './index.scss'
 import juice from 'juice'
 
-import keepInTouch from '../../images/eng/keep-in-touch.jpeg';
-import fewWordsAboutMe from '../../images/eng/few-words-about-me.jpeg';
-import revealMysteries from '../../images/eng/reveal-mysteries.jpeg';
-import seeYou from '../../images/eng/see-you.jpeg';
-import seeYouSoon from '../../images/eng/see-you-soon.jpeg';
-import switchSustainable from '../../images/eng/switch-sustainable.jpeg';
+import keepInTouch from '../../images/eng/keep-in-touch.jpeg'
+import fewWordsAboutMe from '../../images/eng/few-words-about-me.jpeg'
+import revealMysteries from '../../images/eng/reveal-mysteries.jpeg'
+import seeYou from '../../images/eng/see-you.jpeg'
+import seeYouSoon from '../../images/eng/see-you-soon.jpeg'
+import switchSustainable from '../../images/eng/switch-sustainable.jpeg'
+import haveYouHead from '../../images/eng/have-you-heard.png'
 
-import fb from '../../images/ico/fb.png';
-import inst from '../../images/ico/inst.png';
-import linked from '../../images/ico/linked.png';
-import map from '../../images/map_en.png'
-import logo from '../../images/logo.png'
-
+import fb from '../../images/ico/fb.png'
+import inst from '../../images/ico/inst.png'
+import linked from '../../images/ico/linked.png'
 
 const neededVar = {
     keepInTouch,
@@ -23,18 +21,16 @@ const neededVar = {
     seeYou,
     seeYouSoon,
     switchSustainable,
+    haveYouHead,
 
     fb,
     inst,
     linked,
-    map,
-    logo,
 };
 
 const data = {
     styleString: scss.toString(),
-    name: document.getElementById("name").value,
-    patronymic: document.getElementById("patronymic").value,
+    unsubscribe: document.getElementById("unsubscribe")?.value,
     images: {
         keepInTouch: `https://timur00kh.github.io/danaflex-mail-2/images/eng/keep-in-touch.jpeg`,
         fewWordsAboutMe: `https://timur00kh.github.io/danaflex-mail-2/images/eng/few-words-about-me.jpeg`,
@@ -42,13 +38,11 @@ const data = {
         seeYou: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you.jpeg`,
         seeYouSoon: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you-soon.jpeg`,
         switchSustainable: `https://timur00kh.github.io/danaflex-mail-2/images/eng/switch-sustainable.jpeg`,
+        haveYouHead: `https://timur00kh.github.io/danaflex-mail-2/images/eng/have-you-heard.png`,
 
         fb: `https://timur00kh.github.io/danaflex-mail-2/images/ico/fb.png`,
         inst: `https://timur00kh.github.io/danaflex-mail-2/images/ico/inst.png`,
         linked: `https://timur00kh.github.io/danaflex-mail-2/images/ico/linked.png`,
-
-        map: `https://timur00kh.github.io/danaflex-mail-2/images/map_en.png`,
-        logo: `https://timur00kh.github.io/danaflex-mail-2/images/logo.png`,
     },
     links: {
         signup: 'https://event-danaflex.com/'
@@ -61,7 +55,6 @@ function getText () {
         ...data,
         links: {
             ...data.links,
-            unsubscribe: document.getElementById("unsubscribe").value
         }
     });
     return juice(hbsResult);
@@ -92,7 +85,6 @@ function download(filename, text) {
 
     document.body.removeChild(element);
 }
-
 
 if (window.location.href.indexOf('preview') > -1) {
     preview();

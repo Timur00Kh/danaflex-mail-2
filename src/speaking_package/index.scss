@@ -1,0 +1,59 @@
+//@import "fonts/GothamPro/stylesheet.css";
+
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  //background-color: #8bc34a;
+
+  //@media (max-width: 550px) {
+  //  padding-left: 5%;
+  //  padding-right: 5%;
+  //}
+  //
+  //@media (min-width: 550px) {
+  //  padding-left: 60px;
+  //  padding-right: 60px;
+  //}
+}
+
+.header {
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 400px;
+}
+
+.block {
+  padding: 32px;
+
+  p {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+}
+
+.block-img {
+  max-width: 100%;
+  height: auto;
+  display: block
+}
+
+.social {
+  padding: 4px;
+  text-decoration: none;
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.unsubscribe {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+
+* {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;;
+  mso-font-alt: Arial;
+}

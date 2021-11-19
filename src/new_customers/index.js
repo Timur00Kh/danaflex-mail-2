@@ -72,9 +72,10 @@ document.getElementById('download').addEventListener("click", (e) => {
     download('danaflex-email.html', getText());
 })
 
-document.getElementById('copy').addEventListener("click", (e) => {
+document.getElementById('preview').addEventListener("click", (e) => {
     e.preventDefault();
-    copyTextToClipboard(getText());
+    preview();
+    window.location.hash = 'preview';
 })
 
 function download(filename, text) {
@@ -91,9 +92,12 @@ function download(filename, text) {
 }
 
 if (window.location.href.indexOf('preview') > -1) {
+    preview();
+}
+
+function preview() {
     const hbsResult = template(data)
-    const cssInlined = juice(hbsResult)
-    document.documentElement.innerHTML = cssInlined
+    document.documentElement.innerHTML = juice(hbsResult)
 }
 
 function fallbackCopyTextToClipboard(text) {

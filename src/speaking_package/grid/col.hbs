@@ -1,0 +1,20 @@
+{{#> layout}}
+    <!--[if (gte mso 9)|(IE)]>
+         <tr><td width="{{percent}}%" valign="top" >
+    <![endif]-->
+    <div class="column" style="width:100%;max-width:{{getColWidth percent maxWidth}}px;
+            display:inline-block;
+            vertical-align:top;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="border-spacing:0;" >
+            <tr>
+                <td align="center">
+                    {{> @partial-block }}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    <![endif]-->
+{{/layout}}
