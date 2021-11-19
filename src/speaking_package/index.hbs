@@ -89,14 +89,25 @@
                         Then download the app and see for yourself!
                     </p>
                     <div>
-                        {{#> grid/row}}
-                            {{#> grid/col}}
-
-                            {{/grid/col}}
-                            {{#> grid/col}}
-
-                            {{/grid/col}}
-                        {{/grid/row}}
+                        {{#> center}}
+                            {{#> grid/row}}
+                                {{#> grid/col percent=50 maxWidth=350}}
+                                    <a style="margin-top: 6px;display: block" href="https://play.google
+                                    .com/store/apps/details?id=com
+                                    .dabb.nonexistentpackage">
+                                        <img class="block-img" src="{{images.googlePlay}}"
+                                             alt="googlePlay">
+                                    </a>
+                                {{/grid/col}}
+                                {{#> grid/col percent=50 maxWidth=350}}
+                                    <a style="margin-top: 6px;display: block" href="https://apps.apple
+                                    .com/us/app/non-existent-package/id1584931472">
+                                        <img class="block-img" src="{{images.appStore}}"
+                                             alt="appStore">
+                                    </a>
+                                {{/grid/col}}
+                            {{/grid/row}}
+                        {{/center}}
                     </div>
                     <p>
                         Danaflex is proud of me too, so they dedicated an entire
