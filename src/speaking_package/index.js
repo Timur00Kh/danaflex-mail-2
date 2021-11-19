@@ -9,6 +9,8 @@ import seeYou from '../../images/eng/see-you.jpeg'
 import seeYouSoon from '../../images/eng/see-you-soon.jpeg'
 import switchSustainable from '../../images/eng/switch-sustainable.jpeg'
 import haveYouHead from '../../images/eng/have-you-heard.png'
+import appStore from '../../images/ico/app-store.png'
+import googlePlay from '../../images/ico/google-play.png'
 
 import fb from '../../images/ico/fb.png'
 import inst from '../../images/ico/inst.png'
@@ -26,6 +28,8 @@ const neededVar = {
     fb,
     inst,
     linked,
+    appStore,
+    googlePlay,
 };
 
 const data = {
@@ -43,6 +47,8 @@ const data = {
         fb: `https://timur00kh.github.io/danaflex-mail-2/images/ico/fb.png`,
         inst: `https://timur00kh.github.io/danaflex-mail-2/images/ico/inst.png`,
         linked: `https://timur00kh.github.io/danaflex-mail-2/images/ico/linked.png`,
+        appStore: `https://timur00kh.github.io/danaflex-mail-2/images/ico/app-store.png`,
+        googlePlay: `https://timur00kh.github.io/danaflex-mail-2/images/ico/google-play.png`,
     },
     links: {
         signup: 'https://event-danaflex.com/'
