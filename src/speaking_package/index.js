@@ -15,6 +15,7 @@ import googlePlay from '../../images/ico/google-play.png'
 import fb from '../../images/ico/fb.png'
 import inst from '../../images/ico/inst.png'
 import linked from '../../images/ico/linked.png'
+import logo from '../../images/logo.png'
 
 const neededVar = {
     keepInTouch,
@@ -30,6 +31,7 @@ const neededVar = {
     linked,
     appStore,
     googlePlay,
+    logo,
 };
 
 const data = {
@@ -42,6 +44,7 @@ const data = {
         seeYouSoon: `https://timur00kh.github.io/danaflex-mail-2/images/eng/see-you-soon.jpeg`,
         switchSustainable: `https://timur00kh.github.io/danaflex-mail-2/images/eng/switch-sustainable.jpeg`,
         haveYouHead: `https://timur00kh.github.io/danaflex-mail-2/images/eng/have-you-heard.png`,
+        logo: `https://timur00kh.github.io/danaflex-mail-2/images/logo.png`,
 
         fb: `https://timur00kh.github.io/danaflex-mail-2/images/ico/fb.png`,
         inst: `https://timur00kh.github.io/danaflex-mail-2/images/ico/inst.png`,
@@ -96,8 +99,7 @@ if (window.location.href.indexOf('preview') > -1) {
 }
 
 function preview() {
-    const hbsResult = template(data)
-    document.documentElement.innerHTML = juice(hbsResult)
+    document.documentElement.innerHTML = getText();
 }
 
 function fallbackCopyTextToClipboard(text) {

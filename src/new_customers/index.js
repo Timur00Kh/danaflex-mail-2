@@ -96,8 +96,7 @@ if (window.location.href.indexOf('preview') > -1) {
 }
 
 function preview() {
-    const hbsResult = template(data)
-    document.documentElement.innerHTML = juice(hbsResult)
+    document.documentElement.innerHTML = getText();
 }
 
 function fallbackCopyTextToClipboard(text) {
