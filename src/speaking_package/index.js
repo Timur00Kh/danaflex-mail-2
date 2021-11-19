@@ -34,7 +34,6 @@ const neededVar = {
 
 const data = {
     styleString: scss.toString(),
-    unsubscribe: document.getElementById("unsubscribe")?.value,
     images: {
         keepInTouch: `https://timur00kh.github.io/danaflex-mail-2/images/eng/keep-in-touch.jpeg`,
         fewWordsAboutMe: `https://timur00kh.github.io/danaflex-mail-2/images/eng/few-words-about-me.jpeg`,
@@ -51,7 +50,7 @@ const data = {
         googlePlay: `https://timur00kh.github.io/danaflex-mail-2/images/ico/google-play.png`,
     },
     links: {
-        signup: 'https://event-danaflex.com/'
+        unsubscribe: document.getElementById("unsubscribe")?.value,
     },
     neededVar
 }
