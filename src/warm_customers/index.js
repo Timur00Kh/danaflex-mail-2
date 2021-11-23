@@ -33,8 +33,6 @@ const neededVar = {
 
 const data = {
     styleString: scss.toString(),
-    name: document.getElementById("name").value,
-    patronymic: document.getElementById("patronymic").value,
     images: {
         keepInTouch: `https://timur00kh.github.io/danaflex-mail-2/images/eng/keep-in-touch.jpeg`,
         fewWordsAboutMe: `https://timur00kh.github.io/danaflex-mail-2/images/eng/few-words-about-me.jpeg`,
@@ -59,6 +57,8 @@ const data = {
 function getText () {
     const hbsResult = template({
         ...data,
+        name: document.getElementById("name").value,
+        patronymic: document.getElementById("patronymic").value,
         links: {
             ...data.links,
             unsubscribe: document.getElementById("unsubscribe").value
@@ -71,7 +71,7 @@ function getText () {
 
 document.getElementById('download').addEventListener("click", (e) => {
     e.preventDefault();
-    download('danaflex-email.html', getText());
+    download('warm_customers.html', getText());
 })
 
 document.getElementById('preview').addEventListener("click", (e) => {

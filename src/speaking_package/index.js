@@ -53,7 +53,7 @@ const data = {
         googlePlay: `https://timur00kh.github.io/danaflex-mail-2/images/ico/google-play.png`,
     },
     links: {
-        unsubscribe: document.getElementById("unsubscribe")?.value,
+        unsubscribe: "#",
     },
     neededVar
 }
@@ -63,6 +63,7 @@ function getText () {
         ...data,
         links: {
             ...data.links,
+            unsubscribe: document.getElementById("unsubscribe")?.value,
         }
     });
     return juice(hbsResult);
@@ -72,7 +73,7 @@ function getText () {
 
 document.getElementById('download').addEventListener("click", (e) => {
     e.preventDefault();
-    download('danaflex-email.html', getText());
+    download('speaking_package.html', getText());
 })
 
 document.getElementById('preview').addEventListener("click", (e) => {
